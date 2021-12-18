@@ -24,12 +24,12 @@ public class CameraFollow : MonoBehaviour
         index_c=index;
         offset = transform.position - target[index_c].position;
         SetTarget(index_c);
-        Debug.Log("Target= "+target[index_c]);
+       // Debug.Log("Target= "+target[index_c]);
     }
     public void SetTarget(int index){
         index_c=index;//buat kalo nanti ganti target
-        Debug.Log("Camera= "+transform.position);
-        Debug.Log("offset= "+offset);
+       // Debug.Log("Camera= "+transform.position);
+       // Debug.Log("offset= "+offset);
         transform.position=new Vector3(target[index_c].position.x,y_cam,target[index_c].position.z);
  
         //Debug.Log("Set Target= "+index_c);
@@ -46,8 +46,8 @@ public class CameraFollow : MonoBehaviour
     {   
         //SetTarget(index_c);
         SetCamera(index_c);
-        Debug.Log("Camera= "+transform.position);
-        Debug.Log("offset= "+offset+"OFFSET MUST CONSTANT");
+       // Debug.Log("Camera= "+transform.position);
+       // Debug.Log("offset= "+offset+"OFFSET MUST CONSTANT");
        
         //Menapatkan posisi untuk camera
        // Vector3 targetCamPos = target.position + offset;
